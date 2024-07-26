@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialBook-20-BF646589dc50528.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  body {
+    @apply font-sharpGrotesk;
+  }
+  
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialBookItl-20-BF646589dbd3825.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+@font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialMedium-20-BF646589e602b75.otf') format('truetype');
+    font-weight:500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialSmBold-20-BF646589d7efcd5.ttf') format('truetype');
+    font-weight:600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialBold-20-BF646589dd6807c.ttf') format('truetype');
+    font-weight:700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sharp Grotesk';
+    src: url('../src/fonts/SharpGroteskPETrialBlackItl-20-BF646589ee72497.otf') format('truetype');
+    font-weight:900;
+    font-style: normal;
+  }
+  body {
+    @apply font-sharpGrotesk;
+  }
+  
+
+
+
+*{
+    font-family: 'sharp Grotesk';
+}  
+
+
+/* *{
+  outline: 2px solid red;
+}   */
