@@ -31,24 +31,10 @@ const ManageEvents = () => {
   const [confirmEventName, setConfirmEventName] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
 
-  useEffect(() => {
-    const fetchEvents = async () => {
-      setLoadingEvents(true);
-      try {
-        const response = await axios.get(API_URL);
-        setEvents(response.data);
-      } catch (error) {
-        setError(error.message);
-      } finally {
-        setLoadingEvents(false);
-      }
-    };
-    fetchEvents();
-  }, [API_URL]);
-
+  
 
   // Filtered events based on the search term
-  const filteredEvents = events.filter(event =>
+  const filteredEvents = state.allEvents.filter(event =>
     (event.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
      event.description.toLowerCase().includes(searchTerm.toLowerCase()))
 );
