@@ -25,7 +25,7 @@ console.log(state.allEvents, id)
           <img src={event.image} alt={event.name} className='w-full  h-auto' />
         </div>
       </div>
-      <div className='p-6 mt-6 md:p-16'>
+      <div className='p-6 mt-6 md:p-16 flex flex-col gap-4'>
         <p className='text-lightShade'><CiCalendarDate /> {event.date}</p>
         <p className='text-lightShade'><IoTimerOutline /> {event.time}</p>
         <p className='text-lightShade'><TbListDetails /> {event.description}</p>
