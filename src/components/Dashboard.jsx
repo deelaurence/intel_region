@@ -153,7 +153,7 @@ const ManageEvents = () => {
      */}
       {state.isLoggedIn || state.isAdminLoggedIn ? (
         <div className="px-6  md:px-16 pt-24 pb-24">
-          <div className="mx-auto md:flex flex-col items-center justify-flexstart mt-8 p-12 bg-lightShade border shadow-md">
+          <div className="mx-auto md:flex flex-col items-center justify-flexstart mt-8 pt-12 bg-lightShade border shadow-md">
             {error && <p className="text-sm text-red-400 mb-4">{error}</p>}
             <button
               onClick={openAddModal}
