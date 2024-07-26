@@ -41,7 +41,6 @@ function App() {
         const authors = await fetch(`${baseUrl}/users`); // Fetch authors data
         let authorsData = await authors.json(); // Parse authors data to JSON
 
-        console.log(authorsData); // Log authors data to console
 
         // Insert a random image into events without images
         const replaceEmptyImages = (list) => {
@@ -56,7 +55,6 @@ function App() {
 
         // Dispatch authors data to global state if it is an array
         if (Array.isArray(authorsData)) {
-          console.log(authorsData);
           dispatch({ type: 'SET_ALL_AUTHORS', payload: authorsData });
         }
 
@@ -79,7 +77,6 @@ function App() {
     fetchData(); // Call fetchData function
   }, [dispatch, location, state.isLoggedIn]); // Dependency array includes dispatch, location, and isLoggedIn to ensure effect runs when they change
 
-  console.log(state); // Log current state to console
   return (
     <Router>
       <ScrollToTop /> {/* Component to scroll to top of the page on route change */}

@@ -10,7 +10,7 @@ const EventDetails = () => {
   const { state } = useGlobalState();
   const { id } = useParams(); // Get the 'id' parameter from the URL
   const event = state.allEvents.find(event => event.id === id); // Find the event with the matching id
-
+console.log(state.allEvents, id)
   if (!event) {
     return <div className='py-64 text-center bg-darkShade text-3xl px-6 md:px-16 text-lightShade'>Event not found </div>;
   }

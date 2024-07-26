@@ -38,7 +38,6 @@ const handleSubmit = async (e) => {
     const emailExists = state.allAuthors.some((author)=>{
       return author.email===email
     })
-    console.log(emailExists)
 
     if (!emailExists) {
       setIsLoading(false);
@@ -54,7 +53,6 @@ const handleSubmit = async (e) => {
       setPopupMsg("Invalid Password");
       return;
     }
-    console.log(author)
     if(!author.admin){
       setIsLoading(false)
       setPopupMsg("You are not an authorized admin")
